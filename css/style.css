@@ -1,0 +1,295 @@
+:root {
+  --yellow-color: #fcae61;
+  --black-color: #242f51;
+  --blue-color: #2500f9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black-color);
+}
+
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.main-btn {
+  color: var(--blue-color);
+  font-weight: 500;
+}
+
+.main-btn.active {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  /* border: none; */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Start Header */
+header {
+  z-index: 999;
+}
+
+.logo {
+  color: var(--black-color);
+}
+
+.logo span {
+  color: var(--yellow-color);
+}
+
+header nav .nav-link {
+  font-weight: 500;
+  color: var(--black-color) !important;
+}
+
+header nav .nav-link:hover {
+  color: var(--blue-color) !important;
+}
+
+/* End Header */
+/* Start Landing */
+section.landing {
+  position: relative;
+}
+
+section.landing .contain {
+  min-height: min(calc(100vh - 116px), fit-content);
+}
+
+section.landing .contain .hash {
+  width: fit-content;
+  padding-right: 3rem;
+  font-weight: 500;
+  background-color: #e2eaed;
+}
+
+section.landing .contain h3 {
+  font-size: 3.5rem;
+}
+
+section.landing .contain .hash svg {
+  background-color: var(--yellow-color);
+}
+
+section.landing .contain .img-box {
+  padding-inline: 5%;
+}
+
+section.landing .contain img {
+  width: 340px;
+}
+
+section.landing .background-img {
+  z-index: -1;
+}
+
+/* End Landing */
+/* Start Companies */
+.companies {
+  margin-block: 6rem;
+}
+
+/* End Companies */
+/* Start Features */
+.features .img-hide {
+  max-width: 500px;
+}
+
+@media (max-width:992px) {
+  .features .img-hide {
+    display: none;
+  }
+}
+
+.features .info .col-img {
+  width: 7rem;
+}
+
+/* End Features */
+/* Start jackpots */
+
+.jackpots .info {
+  margin-bottom: 7rem;
+}
+
+.jackpots .info::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--black-color);
+}
+
+@media (max-width:992px) {
+  .jackpots .info .col {
+    flex: unset !important;
+
+  }
+
+  .jackpots .info h4,
+  .jackpots .info p {
+    width: 100% !important;
+  }
+
+  .jackpots .info::after {
+    height: 1px;
+    width: 80%;
+  }
+}
+
+.jackpots .parent .box-img {
+  width: fit-content;
+  aspect-ratio: 1;
+}
+
+/* End jackpots */
+
+/* Start Services */
+.services .card .box-img {
+  width: fit-content;
+  aspect-ratio: 1;
+}
+
+.services .row>div:nth-child(1) .card .box-img {
+  background-color: #eee;
+}
+
+.services .row>div:nth-child(2) .card .box-img {
+  background-color: #eaf9ff;
+}
+
+.services .row>div:nth-child(3) .card .box-img {
+  background-color: #fff6d3;
+}
+
+.services .row>div:nth-child(4) .card .box-img {
+  background-color: #e4ffee;
+}
+
+.services .row>div:nth-child(5) .card .box-img {
+  background-color: #f4f4ff;
+}
+
+.services .row>div:nth-child(6) .card .box-img {
+  background-color: #fdeee4;
+}
+
+
+/* End Services */
+/* Start Ultimate-Features */
+.ultimate-features .card .box-img {
+  width: fit-content;
+  aspect-ratio: 1;
+}
+
+.ultimate-features .row>div:nth-child(1) .card .box-img {
+  background-color: #eee;
+}
+
+.ultimate-features .row>div:nth-child(2) .card .box-img {
+  background-color: #eaf9ff;
+}
+
+.ultimate-features .row>div:nth-child(3) .card .box-img {
+  background-color: #fff6d3;
+}
+
+.ultimate-features .row>div:nth-child(4) .card .box-img {
+  background-color: #e4ffee;
+}
+
+/* End Ultimate-Features */
+/* Start pricing */
+.pricing .cards .gere {
+  border-color: #aaa;
+  width: fit-content;
+
+}
+
+.pricing .cards>.row .col {
+  flex: unset;
+  width: 300px;
+}
+
+.pricing .cards .card .header-card .num-pric {
+  font-size: 3rem;
+}
+
+.pricing .cards .card .header-card .num-pric::after {
+  content: "/month";
+  font-size: 1rem;
+  font-weight: normal;
+  color: #999;
+}
+
+/* End pricing */
+/* Start Testimonial */
+.testimonial .member img {
+  width: 60px;
+}
+
+.testimonial .member .name span:first-of-type {
+  margin-bottom: -0.6125rem;
+}
+
+.testimonial .member .toggle span {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* End Testimonial */
+/* Start FAQ */
+@media (min-width:1199px) {
+  .faq .accordion {
+    width: 70%;
+  }
+}
+
+.faq .accordion .accordion-header button {
+  color: var(--black-color) !important;
+}
+
+.faq .accordion .accordion-header button::after {
+  background-image: url(./../imgs/xmark.svg);
+  background-position: center;
+  background-size: 0.8rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-132deg);
+}
+
+/* End FAQ */
+footer {
+  margin-top: -2.8rem;
+  background-color: var(--black-color);
+}
+
+@media (max-width:767px) {
+  footer {
+    margin-top: -1.5rem;
+  }
+}
+
+footer .social li:hover svg {
+  color: #fff !important;
+}
